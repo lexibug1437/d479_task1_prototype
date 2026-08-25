@@ -1,0 +1,140 @@
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.island-moments-regular {
+  font-family: "Island Moments", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.seaweed-script-regular {
+  font-family: "Seaweed Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.gamja-flower-regular {
+  font-family: "Gamja Flower", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b6aba4;
+    Height: 230vh;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    color: white;
+    font-family: 'Seaweed Script';
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+
+#home-page-header {
+    Height: 80vh;
+    width: 99vw;
+}
+
+#home-page-logo {
+    border-radius: 50%;
+    width: 16vw;
+    position: absolute;
+    top: 93%;
+    left: 1%;
+    opacity: 60%;
+}
+
+#header-text {
+    position: absolute;
+    font-size: 2.5vw;
+    top: 97%;
+    left: 3%;
+    color: white;
+    font-family: 'Seaweed Script';
+}
+
+#home-navbar-container {
+    background-color: #000417;
+    height: 105vh;
+    position: relative;
+    width: 100%;
+}
+
+#header-slogan {
+    color: white;
+    font-family: 'Island Moments';
+    font-size: 6vw;
+    position: absolute;
+    top: 18%;
+    left: 19%;
+    text-shadow: 2px 2px 2px #000417;
+}
+
+#home-page-img {
+    min-width: 30vw;
+    height: 85vh;
+}
+
+#home-page-content {
+    width: 26vw;
+    padding: 3%;
+    line-height: 5vh;
+}
+
+#body-content {
+    display: flex;
+    justify-content: center;
+    margin-top: 20%;
+    padding: 5%;
+    font-size: 1.7vw;
+}
+
+#color-fade1 {
+    background-color: #2b658f52;
+    position: absolute;
+    top: 100%;
+    width: 99vw;
+    height: 20vh;
+}
+
+#color-fade2 {
+    background-color: #2b658f37;
+    position: absolute;
+    top: 105%;
+    width: 99vw;
+    height: 30vh;
+}
+
+.home-nav-buttons {
+    background-color: #2b658f;
+    width: 8vw;
+    padding: 0.5vw;
+    margin: 1vw;
+}
+
+.navigation-bar {
+    width: 75%;
+    height: 4vh;
+    text-align: center;
+    position: absolute;
+    top: 86%;
+    left: 17%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
