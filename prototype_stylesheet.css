@@ -448,6 +448,149 @@ body {
 }
     
 
+/* ACTIVITIES PAGE */
+
+#turtle-beach-section {
+    display: flex;
+}
+
+#rainforest-section {
+    margin-left: 3%;
+    display: flex;
+}
+
+#volcano-section {
+    transform: translate(0%, -15%);
+}
+
+#activitivies-bottom-grid {
+    display: flex;
+}
+
+#activities-list {
+    transform: translate(2%, -20%);
+    font-size: 1.3vw;
+    font-family: 'Gamja Flower';
+}
+
+#white-background {
+    background-color: white;
+    padding: 3%;
+    height: 180vh;
+}
+
+/* Text/Headers */
+
+#activities-header {
+    font-size: 3.5vw;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 2px black;
+    height: 20vh;
+    margin-top: 5%;
+}
+
+#act-p {
+    font-size: 1.5vw;
+    color: black;
+    font-weight: bold;
+    font-family: 'Gamja Flower';
+    transform: translate(-2%, -120%);
+}
+
+#activities-top h2 {
+    font-family: 'Pacifico';
+}
+
+#activities-top p {
+    font-family: 'Gamja Flower';
+}
+
+#turtle-beach-text {
+    position: relative;
+    transform: translate(120%, 20%);
+    text-align: center;
+    font-size: larger;
+}
+
+#rainforest-text {
+    transform: translate(30%, 30%);
+    font-size: larger;
+    text-align: center;
+}
+
+#volcano-text {
+    position: relative;
+    transform: translate(-10%, 270%);
+    text-align: center;
+    font-size: larger;
+}
+
+#landing-text {
+    color: white;
+    transform: translate(1%, 300%);
+    font-size: 1.6vw;
+    font-family: 'Gamja Flower';
+
+}
+
+#text-list {
+    transform: translate(0%, -30%);
+    font-size: 1.3vw;
+}
+
+/* Images */
+
+#activities-top img {
+    max-width: 40vw;
+    max-height: 60vh;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#activities-bottom img {
+    max-width: 20vw;
+    max-height: 50vh;
+}
+
+#turtle-beach-img {
+    position: relative;
+    left: 33%;
+}
+
+#volcano-img {
+    position: relative;
+    left: 56%;
+}
+
+#helicopter-img {
+    margin-left: 0.5%;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#activities-bottom img.merriton-landing-img {
+    max-height: 50vh;
+    max-width: 50vw;
+    transform: translate(450%, 0%);
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#activities-bottom-images {
+    display: grid;
+}
+
+#activities-bottom-images img {
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#activities-bottom-grid img {
+    margin-left: 2%;
+    margin-bottom: 2%;
+}
+
 
 
 
@@ -539,7 +682,8 @@ body {
     }
 
     .nav-bar-background {
-        bottom: -110%;
+        bottom: -160%;
+        height: 12vh;
     }
 
 
@@ -596,6 +740,11 @@ body {
         margin-top: 30%;
         margin-left: -10%;
     }
+
+    #dining-nav-bar {
+        bottom: -100%;
+    }
+
 
     #dining-fun-img {
         transform: translate(-45%, 30%);
@@ -664,6 +813,12 @@ body {
         padding: 5%;
     }
 
+    #lodging-nav-bar {
+        bottom: -105%;
+    }
+
+
+
     /* Headers/Text */
 
     #lodging-header {
@@ -678,6 +833,96 @@ body {
         font-size: 5vw;
     }
     
+
+    /* ACTIVITIES PAGE */
+
+    #activities-top {
+        font-size: 3vw;
+    }
+
+    #turtle-beach-section {
+        transform: translate(-32%, 0%);
+        font-size: smaller;
+    }
+
+    #rainforest-section {
+        transform: translate(-4%, 20%);
+        font-size: smaller;
+    }
+
+    #volcano-section {
+        transform: translate(-8%, 10%);
+        font-size: smaller;
+    }
+
+    #white-background {
+        height: 120vh;
+    }
+
+    #activities-list {
+        transform: translate(2%, -5%);
+    }
+
+    /* Text/Headers */
+
+    #activities-header {
+        font-size: 5vw;
+        height: 10vh;
+        margin-top: 10%;
+    }
+
+    #activities-top h2{
+        font-size: 4vw;
+    }
+
+    #act-p {
+        font-size: 3vw;
+    }
+
+    #text-list {
+        font-size: 2.5vw;
+    }
+
+    #landing-text {
+        font-size: 2.5vw;
+    }
+
+    #turtle-beach-text {
+        transform: translate(70%, 0%);
+    }
+
+    #rainforest-text {
+        transform: translate(10%, 20%);
+    }
+
+    #volcano-text {
+        transform: translate(-19%, 160%);
+    }
+
+    /* Images */
+
+    #activities-top img {
+        max-width: 50vw;
+        max-height: 45vh;
+    }
+
+    #activities-bottom img.merriton-landing-img {
+        max-height: 30vh;
+        max-width: 40vw;
+        transform: translate(260%, 30%);
+    }
+
+    #helicopter-img {
+        transform: translate(0%, 10%);
+    }
+
+    #activities-bottom-grid img {
+        margin-left: 2%;
+        margin-bottom: 2%;
+    }
+
+
+
 }    
     
 
@@ -777,7 +1022,7 @@ body {
 
     .nav-bar-background {
         height: 10vh;
-        bottom: -10%;
+        bottom: -100vh;
     }
 
     .navigation-bar {
@@ -895,7 +1140,7 @@ body {
         transform: translate(-80%, 210%);
     }
 
-    
+
 
     /* LODGING */
 
@@ -915,6 +1160,110 @@ body {
         padding: 5%;
     }
 
-}
+    #lodging-nav-bar {
+        bottom: -15%;
+    }
+
+
+    /* ACTIVITIES */
+
+    #activities-header {
+        font-size: 5vw;
+        transform: translate(0%, 20%);
+    }
+
+    #act-p {
+        font-size: 4.5vw;
+        width: 50vw;
+        transform: translate(0%, -30%);
+    }
+
+    #turtle-beach-text {
+        font-size: 5vw;
+        text-align: center;
+        transform: translate(32%, 0%);
+        margin-top: 10%;
+    }
+
+    #rainforest-text {
+        font-size: 5vw;
+        text-align: center;
+        transform: translate(0%, -320%);
+    }
+
+    #volcano-text {
+        font-size: 5vw;
+        text-align: center;
+        transform: translate(7%, 70%);
+    }
+
+    #landing-text {
+        font-size: 5vw;
+        transform: translate(5%, 0%);
+    }
+
+    #text-list {
+        font-size: 4.5vw;
+    }
+
+
+
+
+    #turtle-beach-section {
+        flex-direction: column;
+    }
+
+    #rainforest-section {
+        flex-direction: column;
+    }
+
+    #white-background {
+        height: 110vh;
+    }
+
+    #activities-list {
+        transform: translate(2%, 20%);
+    }
+
+    #act-nav-bar {
+        bottom: -155%;
+    }
+
+    #activities-bottom-images {
+        gap: 10%;
+    }
+
+
+
+    #turtle-beach-img {
+        margin: auto;
+    }
+    
+    #rainforest-img {
+        transform: translate(0%, 25%);
+        margin: auto;
+    }
+
+    #volcano-img {
+        transform: translate(-45%, 50%);
+    }
+
+    #activities-bottom img.merriton-landing-img {
+        max-height: 30vh;
+        max-width: 40vw;
+        transform: translate(120%, 0%);
+    }
+
+    #activities-bottom-grid img {
+        max-width: 40vw;
+        max-height: 20vh;
+        margin-left: 5%;
+    }
+
+    #helicopter-img {
+        transform: translate(0%, 20%);
+    }
+
+
 
 
