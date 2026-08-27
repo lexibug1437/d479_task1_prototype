@@ -448,6 +448,9 @@ body {
 }
     
 
+
+
+
 /* ACTIVITIES PAGE */
 
 #turtle-beach-section {
@@ -593,6 +596,10 @@ body {
 }
 
 
+
+
+
+
 /* TRANSPORTATION */
 
 /* Text/Headers */
@@ -699,6 +706,51 @@ body {
     margin-bottom: 5%;
 }
 
+
+
+
+
+
+
+
+
+
+
+/* FAQ SECTION */
+
+
+#FAQ-section {
+    font-size: 2.5vw;
+    max-width: 50vw;
+    margin: auto;
+    color: white;
+    font-family: 'Gamja Flower';
+    line-height: 150%;
+    transform: translate(10%, 0%);
+}
+
+#FAQ-nav {
+    bottom: -110%;
+}
+
+/* Text/Headers */
+
+#FAQ-section p {
+    font-size: 2vw;
+    color: black;
+}
+
+#FAQ-header {
+    background-color: white;
+    font-size: 2.7vw;
+    text-align: center;
+    height: 25vh;
+    margin-bottom: 3%;
+}
+
+#FAQ-header h1 {
+    transform: translate(0%, 40%);
+}
 
 
 
@@ -1106,6 +1158,29 @@ body {
         margin-left: 16%;
     }
 
+
+
+
+    /* FAQ */
+
+    #FAQ-header {
+        height: 20vh;
+    }
+
+    #FAQ-header h1 {
+        font-size: 10vw;
+    }
+
+    #FAQ-section p {
+        font-size: 3vw;
+    }
+
+    #FAQ-section {
+        font-size: 4vw;
+        margin-top: 20%;
+        transform: translate(0%, 0%);
+    }
+
 }    
     
 
@@ -1485,6 +1560,27 @@ body {
     #air-travel img {
         max-width: 50vw;
         transform: translate(90%, 0%);
+    }
+
+
+    /* FAQ */
+
+    #FAQ-header {
+        height: 15vh;
+    }
+
+    #FAQ-header h1 {
+        font-size: 15vw;
+    }
+
+    #FAQ-section p {
+        font-size: 5vw;
+    }
+
+    #FAQ-section {
+        font-size: 6vw;
+        margin-top: 20%;
+        transform: translate(0%, 0%);
     }
 
 
