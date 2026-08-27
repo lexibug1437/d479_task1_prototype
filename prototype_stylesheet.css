@@ -452,6 +452,7 @@ body {
 
 #turtle-beach-section {
     display: flex;
+    transform: translate(-8%, 0%);
 }
 
 #rainforest-section {
@@ -508,7 +509,7 @@ body {
 
 #turtle-beach-text {
     position: relative;
-    transform: translate(120%, 20%);
+    transform: translate(80%, 20%);
     text-align: center;
     font-size: larger;
 }
@@ -589,6 +590,113 @@ body {
 #activities-bottom-grid img {
     margin-left: 2%;
     margin-bottom: 2%;
+}
+
+
+/* TRANSPORTATION */
+
+/* Text/Headers */
+
+#transport-header {
+    font-size: 2vw;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 6%;
+    margin-left: 3%;
+    font-family: 'Pacifico';
+}
+
+
+#air-travel-h2 {
+    font-size: 2.2vw;
+    text-align: right;
+    padding-right: 2%;
+    font-family: 'Seaweed Script';
+    color: white;
+    text-shadow: 2px 1px 2px black;
+}
+
+#air-travel-text {
+    width: 35vw;
+    padding: 1%;
+    border-radius: 15%;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    font-family: 'Gamja Flower';
+    font-size: 1.3vw;
+}
+
+#walkable-text {
+    width: 35vw;
+    padding: 1%;
+    border-radius: 15%;
+    position: absolute;
+    top: 235%;
+    left: 35%;
+    font-family: 'Gamja Flower';
+    font-size: 1.3vw;
+}
+
+#rental-url {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Sections */
+
+#transport-grid {
+    display: grid;
+    grid-template-columns: 28.5% 45%; 
+    grid-template-rows: 50%;
+    gap: 20px; 
+    margin-left: 15%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Gamja Flower';
+}
+
+#ground-transport {
+    margin-top: 10%;
+}
+
+#private-transport {
+    margin-top: 6%;
+}
+
+#rental-transport {
+    margin-bottom: 10%;
+}
+
+#transport-white-block {
+    background-color: white;
+}
+
+/* Images */
+
+#transport-content img{
+    max-width: 40vw;
+    max-height: 40vh;
+}
+
+#transport-grid img{
+    max-height: 30vh;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#air-travel-img {
+    transform: translate(230%, 0%);
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#walkable-img {
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px black;
+    margin-left: 2%;
+    margin-bottom: 5%;
 }
 
 
@@ -922,6 +1030,81 @@ body {
     }
 
 
+    /* TRANSPORTATION */
+
+    /* Text/Headers */
+
+    #transport-header {
+        font-size: 3.5vw;
+    }
+
+    #air-travel-h2 {
+        font-size: 4vw;
+    }
+
+    #air-travel-text{
+        font-size: 2.5vw;
+        transform: translate(-35%, -110%);
+    }
+
+    #walkable-text {
+        font-size: 4vw;
+        width: 70vw;
+        text-align: center;
+        transform: translate(-27%, -60%);
+    }
+
+    #ground-transport p, h3, h4 {
+        margin-left: 30%;
+    }
+
+    #green-transport p, h3, h4 {
+        margin-left: 30%;
+    }
+
+    #private-transport p, h3, h4 {
+        margin-left: 40%;
+    }
+
+    /* Sections */
+
+    #ground-transport {
+        margin-top: 30%;
+        margin-left: -20%;
+    }
+
+    #private-transport {
+        margin-top: 15%;
+        margin-left: 40%;
+    }
+
+    #rental-transport {
+        margin-bottom: 70%;
+    }
+
+    #green-transport {
+        margin-left: 20%;
+    }
+
+    #transport-grid {
+        font-size: 2.5vw;
+        text-align: center;
+    }
+
+    #transport-nav {
+        height: 10vh;
+    }
+
+    /* Images */
+
+    #air-travel-img {
+        transform: translate(145%, 0%);
+    }
+
+    #walkable-section img {
+        max-width: 70vw;
+        margin-left: 16%;
+    }
 
 }    
     
@@ -1262,6 +1445,46 @@ body {
 
     #helicopter-img {
         transform: translate(0%, 20%);
+    }
+
+
+    /* TRANSPORTATION */
+
+    #air-travel-h2 {
+        font-size: 5vw;
+    }
+
+    #air-travel-text {
+        font-size: 3vw;
+        transform: translate(-60%, -195%);
+    }
+
+    #walkable-text {
+        font-size: 6vw;
+        transform: translate(-30%, -370%);
+    }
+
+    #transport-grid {
+        font-size: 4vw;
+        width: 100%;
+        transform: translate(-8%, 0%);
+    }
+
+    #private-transport {
+        transform: translate(-10%, 0%);
+    }
+
+    #ground-transport {
+        transform: translate(10%, 0%);
+    }
+
+    #green-transport {
+        transform: translate(10%, 0%);
+    }
+
+    #air-travel img {
+        max-width: 50vw;
+        transform: translate(90%, 0%);
     }
 
 
