@@ -778,7 +778,7 @@ body {
     }
 
     #home-nav-bar-background {
-        height: 16vh;
+        height: 20vh;
         top: -5%;
     }
 
@@ -798,19 +798,19 @@ body {
     }
 
     #home-navigation-bar {
-        top: 71%;
+        top: 73%;
         width: 100%;
         left: 0%;
     }
 
     #color-fade1 {
-        top: 75%;
+        top: 78%;
         height: 7vh;
         width: 100%;
     }
 
     #color-fade2 {
-        top: 76%;
+        top: 80%;
         width: 100%;
         height: 10vh;
     }
@@ -871,7 +871,7 @@ body {
     }
 
     #dine-out-text p {
-        transform: translate(-5%, -25%);
+        transform: translate(-10%, -25%);
         font-size: 3.75vw;
     }
 
@@ -883,6 +883,7 @@ body {
 
     #dining-out-main-content h4 {
         font-size: 3.5vw;
+        left: -50%;
     }
 
     #dine-out-text {
@@ -933,6 +934,7 @@ body {
 
     #dining-in-main-content h4 {
         font-size: 3.5vw;
+        left: -60%;
     }
 
 
@@ -1280,7 +1282,6 @@ body {
 
     .nav-bar-background {
         height: 10vh;
-        bottom: -100vh;
     }
 
     .navigation-bar {
@@ -1321,6 +1322,11 @@ body {
         margin-bottom: 7%;
         width: 90vw;
         height: 80vh;
+    }
+
+    
+    #dining-nav-bar {
+        transform: translate(0%, 110%);
     }
 
     /* Text/Headers */
@@ -1367,8 +1373,9 @@ body {
     }
 
     #dining-in-main-content {
-        transform: translate(-35%, 210%);
-        width: 80vw;
+        transform: translate(-20%, 190%);
+        width: 100vw;
+        height: 50vh;
     }
 
     .dining-in-sections {
@@ -1381,11 +1388,16 @@ body {
         transform: translate(21%, 1050%);
     }
 
+ #dine-in-text h3 {
+        font-size: 5vw;
+        transform: translate(-275%, 1270%);
+    }
+
     #dine-in-text p {
         font-size: 5.5vw;
         width: 80vw;
         text-align: center;
-        transform: translate(-60%, 820%);
+        transform: translate(-60%, 800%);
     }
 
     #dining-in-main-content h4 {
@@ -1395,7 +1407,7 @@ body {
     /* Images */
 
     #dining-recipe-img {
-        transform: translate(-80%, 210%);
+        transform: translate(-80%, 260%);
     }
 
 
@@ -1446,13 +1458,14 @@ body {
     #rainforest-text {
         font-size: 5vw;
         text-align: center;
-        transform: translate(0%, -320%);
+        transform: translate(2%, -290%);
+        margin-top: 8%;
     }
 
     #volcano-text {
         font-size: 5vw;
         text-align: center;
-        transform: translate(7%, 70%);
+        transform: translate(7%, 30%);
     }
 
     #landing-text {
@@ -1503,7 +1516,7 @@ body {
     }
 
     #volcano-img {
-        transform: translate(-45%, 50%);
+        transform: translate(-45%, 30%);
     }
 
     #activities-bottom img.merriton-landing-img {
@@ -1557,6 +1570,10 @@ body {
         transform: translate(10%, 0%);
     }
 
+    #transport-nav {
+        transform: translate(0%, -500%);
+    }
+
     #air-travel img {
         max-width: 50vw;
         transform: translate(90%, 0%);
@@ -1581,6 +1598,14 @@ body {
         font-size: 6vw;
         margin-top: 20%;
         transform: translate(0%, 0%);
+    }
+
+    #FAQ-nav {
+        transform: translate(0%, -100%);
+    }
+
+    #FAQ-body {
+        height: 10vh;
     }
 
 }
