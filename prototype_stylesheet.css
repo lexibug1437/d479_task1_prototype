@@ -84,6 +84,33 @@ footer {
 /* #endregion */
 
 
+.photo-cred {
+    font-size: 1vw;
+    color: grey;
+}
+
+.photo-cred a {
+    color: rgb(62, 5, 85);
+}
+
+#home-page-cred, #dining-fun-cred, #dining-recipe-cred, #right-cred {
+    text-align: right;
+    margin-right: 3%;
+}
+
+#lodging-cred {
+    margin-left: 25%;
+}
+
+#rainforest-cred {
+    margin-left: 3%;
+}
+
+#photo-grid-cred {
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
 
 /* HOME */
 
