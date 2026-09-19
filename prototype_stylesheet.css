@@ -1,4 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #b6aba4;
+}
+
+footer {
+    width: 100%;
+}
+
+
+/* NAVIGATION */
+
+/* #region Navigation */
+
+.nav-bar-background {
+    background-color: #8daeb6;
+    height: 15vh;
+}
+
+.navigation-bar {
+    width: 90%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.navigation-bar a {
+    color: white;
+    font-family: "Seaweed Script", cursive;
+    font-size: 1.7vw;
+    text-decoration: none;
+}
+
+.nav-bar-buttons {
+    background-color: #2b658f;
+    width: 8vw;
+    padding: 0.5vw;
+    margin: 1vw;
+    margin-top: 2%;
+    box-shadow: 0px 0px 5px rgb(0, 0, 56);
+}
+
+.nav-bar-buttons:hover {
+    background-color: #f0fae5;
+}
+
+.nav-bar-buttons a:hover {
+    color: #000417;
+}
+
+/* #endregion */
+
+
 /* FONTS */
+
+/* #region FONTS */
 .pacifico-regular {
   font-family: "Pacifico", cursive;
   font-weight: 400;
@@ -23,407 +81,381 @@
   font-style: normal;
 }
 
+/* #endregion */
 
 
 
+/* HOME */
 
-a {
-    color: white;
-    font-family: "Seaweed Script", cursive;
-    text-decoration: none;
-    font-size: 1.7vw;
-}
+    /* #region Containers */
 
-body {
+#home-body {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #000417, #b6aba4 50%);
+    max-width: 100%;
     margin: 0;
     padding: 0;
-    background-color: #b6aba4;
-    Height: 200vh;
 }
 
-
-/* GENERAL NAV */
-
-.nav-bar-background {
-    background-color: #8daeb6;
-    width: 100%;
-    height: 15vh;
-    position: absolute;
+#home-part-one {
+  position: relative;
+  width: 100%;
 }
 
-.navigation-bar {
-    width: 75%;
-    height: 4vh;
-    text-align: center;
-    position: absolute;
-    top: 45%;
-    left: 17%;
+#home-part-two{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+}
+
+#home-header-container {
+    height: auto; 
+    max-height: 90vh;
+    position: relative; 
+}
+
+#home-color-fade1 {
+    background-color: rgba(0, 0, 41, 0.977);
+    width: 100%;
+    height: 10vh;
+    opacity: 0.6;
+    margin-top: 0%;
+    position: relative;
+    z-index: -1;
+}
+
+#home-color-fade2 {
+    background-color: rgba(0, 0, 41, 0.264);
+    width: 100%;
+    height: 10vh;
+}
+
+#home-body-content {
+    display: flex;
+    width: 100%;
     justify-content: center;
 }
 
-.nav-bar-buttons {
-    background-color: #2b658f;
-    width: 8vw;
-    padding: 0.5vw;
-    margin: 1vw;
-    box-shadow: 0px 0px 5px rgb(0, 0, 56);
-}
+/* #endregion */
 
-.nav-bar-buttons:hover {
-    background-color: #5e8435;
-}
-
-
-
-
-
-/* HOME PAGE */
-
-/* Header*/
-
-#header-container {
-    position: relative;
-    max-height: 80vh;
-    min-height: 60vh;
-    width: 100%;
-}
-
-#home-header-img {
-    max-height: 80vh;
-    min-height: 60vh;
-    width: 100%;
-}
-
-#header-slogan {
-    color: white;
-    font-family: "Island Moments", cursive;
-    font-size: 6vw;
-    position: absolute;
-    top: 17%;
-    left: 19%;
-    text-shadow: 2px 2px 2px #000417;
-}
-
-#home-logo-img {
-    border-radius: 50%;
-    width: 18vw;
-    position: absolute;
-    top: 75%;
-    left: 1%;
-    opacity: 60%;
-}
-
-#header-island-name {
-    position: absolute;
-    font-size: 2.5vw;
-    top: 80%;
-    left: 4%;
-    color: white;
-    font-family: "Seaweed Script", cursive;
-}
-
-
-/* Nav */
-
-#home-nav-bar-background {
-    background-color: #000417;
-    width: 100%;
-    height: 30vh;
-}
+    /* #region Navigation */
 
 #home-navigation-bar {
-    width: 75%;
-    height: 4vh;
-    text-align: center;
-    position: absolute;
-    top: 88%;
-    left: 17%;
     display: flex;
-    align-items: center;
+    font-size: 2vw;
+    max-width: 70%;
+    margin-left: 30%;
     justify-content: center;
+    gap: 3vw;
+}
+
+#home-nav-bar-background {
+    width: 100%;
+    background-color: rgb(0, 0, 41);
+    height: 10vh;
 }
 
 #home-nav-buttons {
-    background-color: #2b658f;
-    width: 8vw;
-    padding: 0.5vw;
-    margin: 1vw;
+    margin-right: 2%;
 }
 
-#home-nav-buttons:hover {
-    background-color: #5e8435;
+#home-nav-buttons :hover {
+    background-color: #2a4e6998;
+    border-radius: 5%;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
 }
 
-
-/* Body */
-
-#color-fade1 {
-    background-color: #2b658f52;
-    position: absolute;
-    top: 100%;
-    width: 99vw;
-    height: 20vh;
+#home-navigation-bar a {
+    color: white;
+    text-decoration: none;
+    font-family: "Seaweed Script", cursive;
+    font-size: 2.5vw;
 }
 
-#color-fade2 {
-    background-color: #2b658f37;
-    position: absolute;
-    top: 105%;
-    width: 99vw;
-    height: 30vh;
+/* #endregion Navigation */
+
+    /* #region Images */
+
+#home-header-img {
+    width: 100%;
+    display: block;
+    max-height: 90vh;
 }
 
+#home-logo-img {
+    max-width: 30%;
+    border-radius: 50%;
+    position: absolute; 
+    bottom: -10%; 
+    left: 1%;
+}
 
 #home-page-img {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    box-shadow: 0px 0px 10px #000417;
+    margin-right: 2vw;
     max-width: 27vw;
     height: auto;
-    box-shadow: 0px 0px 10px #000417;
+}
+
+/* #endregion Images */
+
+    /* #region Text */
+
+#home-header-slogan {
+    color: white;
+    font-family: "Island Moments", cursive;
+    position: absolute; 
+    left: 17%;
+    top: 15%;
+    font-size: 6vw;
+    z-index: 10;
+    text-shadow: 2px 2px 2px #000417;
+}
+
+#home-island-name{
+    color: rgb(255, 255, 255);
+    font-family: "Seaweed Script", cursive;
+    font-size: 3vw;
+    position: absolute; 
+    left: 9%;
+    top: 82%;
+    text-shadow: 1px 1px 1px #000417;
 }
 
 #home-page-content {
     width: 26vw;
-    padding: 5%;
+    padding: 3%;
     line-height: 5vh;
     font-family: 'Gamja Flower';
-}
-
-#body-content {
-    display: flex;
-    justify-content: center;
-    margin-top: 20%;
-    padding: 5%;
     font-size: 1.7vw;
+    margin-top: 15%;
 }
 
+/* #endregion Text */
 
 
+/* DINING */
 
+/* #region Containers */ 
 
+#dining-body-container {
+    display: flex;
+    background-color: #b6aba4;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 3%;
+}
 
-/* DINING PAGE */
+#dining-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2%;
+}
 
+#dine-out-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    background-color: #faf8f8;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #000417;
+}
 
-/* Headers */
+#dine-in-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 45%;
+    background-color: #faf8f8;
+    border-radius: 5%;
+    box-shadow: 0px 0px 10px #000417;
+}
+
+#dining-out-header {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#dining-in-header {
+    text-align: center;
+    max-width: 80%;
+    margin: auto;
+}
+
+#dining-in-content {
+    margin-left: 3%;
+}
+
+#dining-out-content {
+    margin-left: 3%;
+}
+
+.dining-sections {
+    display: flex;
+    max-width: 90%;
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+/* #endregion */
+
+/* #region Text */
 
 #dining-h1 {
     color: white;
     font-family: "Seaweed Script", cursive;
     font-size: 4vw;
     text-shadow: 2px 2px 2px #000417;
-    position: absolute;
-    top: 4%;
-    left: 27%;
-}
-
-.dining-h2 {
-    color: rgb(63, 47, 45);
-    font-size: 2vw;
-    position: absolute;
-    display: flex;
-    top: 30%;
-    left: 20%;
-    width: 100%;
-}
-
-
-/* Body */
-
-#dining-body-container {
-    display: flex;
-    padding: 5%;
-}
-
-
-/* Dining Out */
-
-#dine-out-container {
-    width: 45vw;
-    height: 160vh;
-    background-color: #faf8f8;
-    margin-top: 10%;
-    border-radius: 3%;
-    box-shadow: 0px 0px 10px #000417;
-}
-
-#dining-out-main-content {
-    margin-top: 10%;
-}
-
-.dining-out-sections {
-    display: flex;
-    padding: 4%;
-    margin-top: 10%;
-}
-
-
-/* Text/Headers */
-
-#dine-out-text h3 {
-        position: relative;
-        left: -25%;
-        top: 15%;
-        font-family: 'Seaweed Script';
-        font-size: 2vw;
-}
-
-#dining-out-main-content h4 {
-    font-size: 2vw;
-    position: relative;
-    left: -20%;
 }
 
 #dine-out-h2 {
-    margin-right: 35%;    
+    color: rgb(63, 47, 45);
+    font-size: 2vw;
 }
 
-#dine-out-text {
+#dine-in-h2 {
+    color: rgb(63, 47, 45);
+    font-size: 2vw;
+}
+
+.dining-text {
     color: rgb(63, 47, 45);
     font-size: 1.5vw;
-    position: absolute;
-    top: 35%;
-    left: 14%;
-    width: 30vw;
-    height: 160vh;
     font-family: 'Gamja Flower';
 }
 
-#dine-out-text p {
-    transform: translate(0%, -20%);
+#dining-body h3 {
+    font-family: 'Seaweed Script';
+    font-size: 2vw;
+    margin: 1%;
 }
 
+#dining-body h4 {
+    font-size: 1.6vw;
+    font-family: 'Gamja Flower';
+    margin-left: 5%;
+    margin-top: 10%;
+}
 
-/* Images */
+/* #endregion Text */
 
-#dine-out-text img {
-    max-width: 30vw;
-    max-height: 23vh;
-    position: relative;
-    left: -30%;
+/* #region Images */
+
+#dine-out-container img {
+    max-width: 40%;
+}
+
+#dine-in-container img {
+    max-width: 50%;
+}
+
+#dining-body img {
+    border-radius: 15%;
+    box-shadow: 0px 0px 5px black;
 }
 
 #dining-fun-img {
-    position: relative;
-    margin-left: 85%;
-    border-radius: 20%;
+    border-radius: 50% !important;
     border: 3px solid black;
-    box-shadow: 0px 0px 5px black;
+    margin-left: 58%;
 }
 
-.dining-out-sections img {
-    box-shadow: 0px 0px 10px black;
-}
-
-
-/* Dining In */
-
-#dine-in-container {
-    width: 45vw;
-    height: 160vh;
-    background-color: #faf8f8;
-    margin-top: 10%;
-    margin-left: 2%;
-    border-radius: 3%;
-    box-shadow: 0px 0px 10px #000417;
-}
-
-.dining-in-sections {
-    display: flex;
-    padding: 4%;
-    margin-top: 10%;
-}
-
-/* Text/Headers */
-
-#dine-in-text {
-    color: rgb(63, 47, 45);
-    font-size: 1.5vw;
-    position: absolute;
-    top: 5%;
-    left: 59%;
-    width: 30vw;
-    height: 160vh;
-    font-family: 'Gamja Flower';
-}
-
-#dine-in-text p {
-    position: relative;
-    top: 17%;
-}
-
-#dine-in-text h3 {
-    position: relative;
-    left: -22%;
-    top: 32%;
-    font-family: 'Seaweed Script';
-    font-size: 2vw;
-}
-
-#dining-in-main-content h4 {
-    font-size: 1.5vw;
-    position: relative;
-    left: -20%;
-}
-
-/* Images */
-    
 #dining-recipe-img {
-    border-radius: 50%;
-    position: relative;
-    top: 81%;
-    margin-left: 120%;
+    border-radius: 50% !important;
     border: 3px solid black;
-    box-shadow: 0px 0px 5px black;
+    margin-left: 48%;
+}
+/* #endregion Images */
+
+
+/* LODING */
+
+/* #region Sections */
+
+#hostels, #hotels, #bed-breakfasts {
+    display: flex;
+    justify-content: center;
+    margin-top: 3%;
+    align-items: center;
 }
 
-.dining-in-sections img {
-    box-shadow: 0px 0px 10px black;
-}
-
-#dine-in-text img {
-    max-width: 25vw;
-    max-height: 23vh;
-    position: relative;
-    left: -30%;
-}
-
-
-
-
-
-
-
-/* LODGING PAGE */
-
-
-#lodging-sections img{
-    max-width: 50vw;
-    max-height: 80vh;
-    margin-right: 7%;
-    box-shadow: 0px 0px 10px  white;
+#lodging-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #lodging-sections {
-    width: 75vw;
-    display: flex;
-    flex-direction: column;
-    font-size: 2vw;
-    color: white;
-    text-shadow: 2px 2px 2px black;
-    margin-left: 8%;
+    max-width: 90%;
 }
 
+#lodging-background {
+    background-color: white;
+    padding: 3%;
+    padding-top: 0.1%;
+    box-shadow: 2px 2px 10px black;
+}
+
+/* #endregion Sections */
+
+/* #region Images */
+
+
+#hostel-img {
+    max-width: 50%;
+    box-shadow: 0px 0px 10px  white;
+}
+
+#hotel-img {
+    max-width: 30%;
+    box-shadow: 0px 0px 10px  white;
+}
+
+#bed-breakfasts img {
+    max-width: 25%;
+    box-shadow: 0px 0px 10px  white;
+}
+
+#lodging-background img {
+    max-width: 40%;
+    max-height: 70vh;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px black;
+}
+
+/* #endregion Images */
+
+/* #region Text */
+
 #lodging-sections h2 {
-    text-align: center;
-    margin: auto;
+    color: white;
+    font-size: 3vw;
+    margin-left: 2%;
+    max-width: 30%;
+    text-shadow: 2px 2px 2px black;
+}
+
+#lodging-h1 {
+    color: white;
+    font-family: "Island Moments", cursive;
+    font-size: 4vw;
+    max-width: 40%;
+    margin-bottom: 1%;
 }
 
 #lodging-header {
-    font-size: 4vw;
-    text-align: center;
-    color: white;
-    font-family: 'Island Moments';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #lodging-text {
@@ -432,180 +464,193 @@ body {
     font-family: 'Gamja Flower';
 }
 
-#hostels {
-    display: flex;
-    padding: 2%;
+#lodging-background h2 {
+    font-family: 'Pacifico';
+    font-size: 2vw;
 }
 
-#hotels {
-    display: flex;
-    padding: 2%;
+#lodging-background p {
+    font-family: 'Gamja Flower';
+    font-size: 1.4vw;
 }
 
-#bed-breakfasts {
-    display: flex;
-    padding: 2%;
-}
-    
+/* #endregion Text */
 
 
+/* ACTIVITIES */
 
-
-/* ACTIVITIES PAGE */
-
+/* #region Sections */
 #turtle-beach-section {
     display: flex;
-    transform: translate(-8%, 0%);
+    justify-content: right;
+    margin-top: 5%;
+    align-items: center;
+}
+
+#activities-right {
+    margin-right: 10%;
 }
 
 #rainforest-section {
-    margin-left: 3%;
     display: flex;
+    margin-top: 2%;
+    align-items: center;
+}
+
+#activities-bottom-grid {
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+#activities-bottom {
+    display: flex;
+    align-items: center;
 }
 
 #volcano-section {
-    transform: translate(0%, -15%);
-}
-
-#activitivies-bottom-grid {
     display: flex;
+    justify-content: right;
+    margin-top: 2%;
+    align-items: center;
 }
 
-#activities-list {
-    transform: translate(2%, -20%);
-    font-size: 1.3vw;
-    font-family: 'Gamja Flower';
-}
+/* #endregion Sections */
 
-#white-background {
-    background-color: white;
-    padding: 3%;
-    height: 180vh;
-}
+/* #region Text */
 
-/* Text/Headers */
+#turtle-beach-text {
+    margin-right: 5%;
+    text-align: center;
+    max-height: 20%;
+}
 
 #activities-header {
-    font-size: 3.5vw;
+    font-size: 3vw;
     color: white;
     text-align: center;
     text-shadow: 2px 2px 2px black;
-    height: 20vh;
     margin-top: 5%;
-}
-
-#act-p {
-    font-size: 1.5vw;
-    color: black;
-    font-weight: bold;
-    font-family: 'Gamja Flower';
-    transform: translate(-2%, -120%);
-}
-
-#activities-top h2 {
-    font-family: 'Pacifico';
-}
-
-#activities-top p {
-    font-family: 'Gamja Flower';
-}
-
-#turtle-beach-text {
-    position: relative;
-    transform: translate(80%, 20%);
-    text-align: center;
-    font-size: larger;
+    margin-bottom: 7%;
 }
 
 #rainforest-text {
-    transform: translate(30%, 30%);
-    font-size: larger;
+    margin-left: 5%;
     text-align: center;
+    max-height: 20%;
+}
+
+#activities-list {
+    background-color: white;
+    border-radius: 15%;
+    padding: 2%;
 }
 
 #volcano-text {
-    position: relative;
-    transform: translate(-10%, 270%);
+    margin-right: 5%;
     text-align: center;
-    font-size: larger;
+    max-height: 20%;
+}
+
+#act-header-text {
+    color: black;
+    font-weight: bold;
+    font-family: 'Gamja Flower';
+    font-size: 1.6vw !important;
+
+}
+
+#act-text-list {
+    font-size: 1.3vw;
+    font-family: 'Gamja Flower';
+    text-align: right;
+    margin-right: 15%;
 }
 
 #landing-text {
-    color: white;
-    transform: translate(1%, 300%);
-    font-size: 1.6vw;
+    font-size: 1.7vw;
     font-family: 'Gamja Flower';
-
+    max-width: 80%;
+    text-align: center;
+    margin-bottom: 25%;
+    color: white;
+    text-shadow: 2px 2px 2px black;
 }
 
-#text-list {
-    transform: translate(0%, -30%);
-    font-size: 1.3vw;
-}
+/* #endregion Text */
 
-/* Images */
-
-#activities-top img {
-    max-width: 40vw;
-    max-height: 60vh;
-    border-radius: 10%;
-    box-shadow: 0px 0px 10px black;
-}
-
-#activities-bottom img {
-    max-width: 20vw;
-    max-height: 50vh;
-}
-
-#turtle-beach-img {
-    position: relative;
-    left: 33%;
-}
-
-#volcano-img {
-    position: relative;
-    left: 56%;
-}
-
-#helicopter-img {
-    margin-left: 0.5%;
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px black;
-}
-
-#activities-bottom img.merriton-landing-img {
-    max-height: 50vh;
-    max-width: 50vw;
-    transform: translate(450%, 0%);
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px black;
-}
-
-#activities-bottom-images {
-    display: grid;
-}
-
-#activities-bottom-images img {
-    border-radius: 5%;
-    box-shadow: 0px 0px 10px black;
-}
+/* #region Images */ 
 
 #activities-bottom-grid img {
-    margin-left: 2%;
-    margin-bottom: 2%;
+    max-width: 30%;
+    max-height: 60vh;
+    border-radius: 2%;
+    box-shadow: 0px 0px 1px 1px black;
 }
 
+/* #endregion Images */ 
 
 
+/* TRANSPORT */
 
+/* #region Sections */
 
+#air-travel-content {
+    display: flex;
+    justify-content: right;
+    margin-right: 3%;
+    align-items: center;
+    margin-bottom: 10%;
+}
 
-/* TRANSPORTATION */
+#transport-white-block {
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px grey;
+    overflow: auto;
+    margin-bottom: 10%;
+}
 
-/* Text/Headers */
+#transport-grid {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 50%;
+    gap: 4%; 
+    margin-left: 6%;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    font-family: 'Gamja Flower';
+}
 
-#transport-header {
-    font-size: 2vw;
+#walkable-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#walkable-content {
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#walkable-text-link {
+    display: flex;
+    justify-content: center;
+}
+
+#ground-transport, #private-transport, #rental-transport, #green-transport {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* #endregion Sections */
+
+/* #region Text */
+
+#transport-header h1 {
+    font-size: 4vw;
     color: white;
     text-shadow: 2px 2px 2px black;
     margin-top: 6%;
@@ -613,36 +658,40 @@ body {
     font-family: 'Pacifico';
 }
 
+#air-travel-text {
+    max-width: 40%;
+    font-family: 'Gamja Flower';
+    font-size: 1.4vw;
+}
 
 #air-travel-h2 {
-    font-size: 2.2vw;
     text-align: right;
-    padding-right: 2%;
+    margin-right: 3%;
     font-family: 'Seaweed Script';
     color: white;
     text-shadow: 2px 1px 2px black;
+    font-size: 2.2vw;
 }
 
-#air-travel-text {
-    width: 35vw;
-    padding: 1%;
-    border-radius: 15%;
-    position: absolute;
-    top: 50%;
-    left: 27%;
-    font-family: 'Gamja Flower';
+#transport-grid h3 {
+    font-size: 1.5vw;
+}
+
+#transport-grid h4 {
     font-size: 1.3vw;
+}
+#transport-grid p {
+    font-size: 1.4vw;
+    max-width: 70%;
 }
 
 #walkable-text {
-    width: 35vw;
+    max-width: 60%;
     padding: 1%;
     border-radius: 15%;
-    position: absolute;
-    top: 235%;
-    left: 35%;
     font-family: 'Gamja Flower';
-    font-size: 1.3vw;
+    font-size: 1.5vw;
+    text-align: center;
 }
 
 #rental-url {
@@ -650,51 +699,27 @@ body {
     text-decoration: underline;
 }
 
-/* Sections */
-
-#transport-grid {
-    display: grid;
-    grid-template-columns: 28.5% 45%; 
-    grid-template-rows: 50%;
-    gap: 20px; 
-    margin-left: 15%;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-family: 'Gamja Flower';
+#merriton-landing-url {
+    color: white;
+    text-decoration: none;
+    font-size: 2vw;
+    font-family: "Seaweed Script", cursive;
 }
 
-#ground-transport {
-    margin-top: 10%;
-}
+/* #endregion Text */
 
-#private-transport {
-    margin-top: 6%;
-}
+/* #region Images */
 
-#rental-transport {
-    margin-bottom: 10%;
-}
-
-#transport-white-block {
-    background-color: white;
-}
-
-/* Images */
-
-#transport-content img{
-    max-width: 40vw;
+#transport-grid img {
+    max-width: 60%;
     max-height: 40vh;
-}
-
-#transport-grid img{
-    max-height: 30vh;
     border-radius: 5%;
     box-shadow: 0px 0px 10px black;
 }
 
-#air-travel-img {
-    transform: translate(230%, 0%);
+#air-travel img {
+    max-width: 30%;
+    margin-left: 5%;
     border-radius: 5%;
     box-shadow: 0px 0px 10px black;
 }
@@ -702,912 +727,481 @@ body {
 #walkable-img {
     border-radius: 5%;
     box-shadow: 0px 0px 10px black;
-    margin-left: 2%;
     margin-bottom: 5%;
+    max-width: 70%;
 }
 
+/* #endregion Images */
 
 
+/* FAQ */
 
-
-
-
-
-
-
-
-/* FAQ SECTION */
-
+/* #region FAQ */
 
 #FAQ-section {
     font-size: 2.5vw;
-    max-width: 50vw;
+    max-width: 50%;
     margin: auto;
+    margin-bottom: 15%;
     color: white;
     font-family: 'Gamja Flower';
-    line-height: 150%;
-    transform: translate(10%, 0%);
+    line-height: 200%;
 }
 
-#FAQ-nav {
-    bottom: -110%;
-}
-
-/* Text/Headers */
-
-#FAQ-section p {
-    font-size: 2vw;
-    color: black;
+#FAQ-body {
+        display: flex;
+        flex-direction: column;
 }
 
 #FAQ-header {
     background-color: white;
     font-size: 2.7vw;
     text-align: center;
-    height: 25vh;
-    margin-bottom: 3%;
+    height: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6%;
+    margin-top: 5%;
 }
 
-#FAQ-header h1 {
-    transform: translate(0%, 40%);
+#FAQ-section p {
+    font-size: 2vw;
+    color: black;
 }
 
+/* #endregion FAQ */
 
 
 
+/* MEDIA QUERIES */
 
 
+/* #region UNDER 1300PX */
+@media (max-width: 1300px) {    
 
+    /* Home */
 
-
-
-
-
-/* TABLET ADJUSTMENTS */
-
-@media (max-width: 1280px) {
-
-    /* HOME PAGE */
-
-    #header-container {
-        max-height: 60vh;
+    #home-island-name {
+        top: 85%;
     }
 
-    #header-slogan {
-        top: 30%;
+    #home-header-slogan {
+        top: 20%;
     }
 
-    #home-nav-bar-background {
-        height: 20vh;
-        top: -5%;
+    /* #region Transport */
+
+    #transport-grid h3 {
+    font-size: 1.7vw;
+}
+
+    #transport-grid h4 {
+        font-size: 1.6vw;
     }
 
-    #home-logo-img {
-        top: 59%;
-        width: 25vw;
+    #transport-grid p {
+        font-size: 1.6vw;
+        max-width: 70%;
+    }   
+
+    #walkable-text {
+        font-size: 2vw;
     }
 
-    #header-island-name {
-        top: 60%;
-        left: 4%;
-        font-size: 4vw;
+    #air-travel-text {
+        font-size: 2vw;
     }
 
-    #home-nav-buttons {
-        width: 60vw;
+    /* #endregion Transport */
+
+}
+
+/* #endregion UNDER 1300PX */
+
+/* #region UNDER 1090PX */
+
+@media (max-width: 1090px) {     
+
+    /* Nav */
+
+    .navigation-bar a {
+        font-size: 2.3vw;
     }
 
-    #home-navigation-bar {
-        top: 73%;
-        width: 100%;
-        left: 0%;
-    }
-
-    #color-fade1 {
-        top: 78%;
-        height: 7vh;
-        width: 100%;
-    }
-
-    #color-fade2 {
-        top: 80%;
-        width: 100%;
-        height: 10vh;
-    }
-
-    #home-page-img {
-        max-width: 45vw;
-        height: auto;
-        transform: translate(0%, 8%);
-    }
+    /* Home */
 
     #home-page-content {
-        font-size: 2.5vw;
-        width: 40vw;
-    }
-
-
-    /* OTHER PAGES */
-
-    a {
-        font-size: 4vw;
-    }
-
-    .nav-bar-buttons {
-        width: 20vw;
-    }
-
-    .navigation-bar {
-        left: 13%;
-    }
-
-    .nav-bar-background {
-        bottom: -160%;
-        height: 12vh;
-    }
-
-
-    /* DINING PAGE */
-
-    #dining-h1 {
-        font-size: 5vw;
-        top: -0.5%;
-        left: 23%;
-    }
-
-    .dining-h2 {
-        top: 10%;
-        font-size: 2.5vw;
-        left: 17%;
-    }
-
-
-    /* Dine Out */
-
-    /* Text/Headers */
-
-    #dine-out-h2 {
-        transform: translate(18%, 0%);
-    }
-
-    #dine-out-text p {
-        transform: translate(-10%, -25%);
-        font-size: 3.75vw;
-    }
-
-    #dine-out-text h3{
-        font-size: 3.5vw;
-        top: 22%;
-        left: -50%;
-    }
-
-    #dining-out-main-content h4 {
-        font-size: 3.5vw;
-        left: -50%;
-    }
-
-    #dine-out-text {
-        top: 20%;
-        font-size: 3vw;
-        text-align: center;
-    }
-
-
-    .dining-out-sections {
-        padding: 10%;
-    }
-
-    #dining-out-main-content {
-        margin-top: 30%;
-        margin-left: -10%;
-    }
-
-    #dining-nav-bar {
-        bottom: -100%;
-    }
-
-
-    #dining-fun-img {
-        transform: translate(-45%, 30%);
-    }
-
-    /* Dine In */
-
-    /* Text/Headers */
-
-    #dine-in-text {
-        top: -7%;
-        font-size: 3vw;
-        text-align: center;
-    }
-
-    #dine-in-text p {
-        transform: translate(0%, -25%);
-        font-size: 4vw;
-    }
-
-    #dine-in-text h3{
-        font-size: 3.5vw;
-        top: 38%;
-        left: -45%;
-    }
-
-    #dining-in-main-content h4 {
-        font-size: 3.5vw;
-        left: -60%;
-    }
-
-
-    .dining-in-sections {
-        padding: 1%;
-    }
-
-    #dining-in-main-content {
-        margin-top: 25%;
-        margin-left: 5%;
-    }
-
-    /* Images */
-
-    #dining-in-main-content img {
-        max-width: 22vw;
-    }
-
-    #dining-recipe-img {
-        transform: translate(-70%, -20%);
-    }
-
-
-
-
-
-    /* LODGING PAGE */
-
-    #hostels {
-        padding: 5%;
-    }
-
-    #hotels {
-        padding: 5%;
-    }
-
-    #bed-breakfasts {
-        padding: 5%;
-    }
-
-    #lodging-nav-bar {
-        bottom: -105%;
-    }
-
-
-
-    /* Headers/Text */
-
-    #lodging-header {
-        font-size: 10vw;
-    }
-
-    #lodging-text {
-        font-size: 5vw;
-    }
-
-    #lodging-sections h2 {
-        font-size: 5vw;
-    }
-    
-
-    /* ACTIVITIES PAGE */
-
-    #activities-top {
-        font-size: 3vw;
-    }
-
-    #turtle-beach-section {
-        transform: translate(-32%, 0%);
-        font-size: smaller;
-    }
-
-    #rainforest-section {
-        transform: translate(-4%, 20%);
-        font-size: smaller;
-    }
-
-    #volcano-section {
-        transform: translate(-8%, 10%);
-        font-size: smaller;
-    }
-
-    #white-background {
-        height: 120vh;
-    }
-
-    #activities-list {
-        transform: translate(2%, -5%);
-    }
-
-    /* Text/Headers */
-
-    #activities-header {
-        font-size: 5vw;
-        height: 10vh;
         margin-top: 10%;
     }
 
-    #activities-top h2{
-        font-size: 4vw;
+    #home-island-name {
+        top: 87%;
     }
 
-    #act-p {
-        font-size: 3vw;
+    /* Activities */
+
+    #act-header-text {
+        font-size: 2vw !important;
     }
 
-    #text-list {
-        font-size: 2.5vw;
+    #activities-top p {
+        font-size: larger;
     }
 
     #landing-text {
         font-size: 2.5vw;
+        margin-bottom: 10%;
     }
 
-    #turtle-beach-text {
-        transform: translate(70%, 0%);
+    #act-text-list {
+        font-size: larger;
     }
 
-    #rainforest-text {
-        transform: translate(10%, 20%);
-    }
+    /*Other */
 
-    #volcano-text {
-        transform: translate(-19%, 160%);
-    }
-
-    /* Images */
-
-    #activities-top img {
-        max-width: 50vw;
-        max-height: 45vh;
-    }
-
-    #activities-bottom img.merriton-landing-img {
-        max-height: 30vh;
-        max-width: 40vw;
-        transform: translate(260%, 30%);
-    }
-
-    #helicopter-img {
-        transform: translate(0%, 10%);
-    }
-
-    #activities-bottom-grid img {
-        margin-left: 2%;
-        margin-bottom: 2%;
+    .dining-text, #dining-body h4 {
+        font-size: larger;
     }
 
 
-    /* TRANSPORTATION */
-
-    /* Text/Headers */
-
-    #transport-header {
-        font-size: 3.5vw;
+    #lodging-text {
+        font-size: larger;
     }
 
-    #air-travel-h2 {
+
+    #FAQ-header {
         font-size: 4vw;
     }
 
-    #air-travel-text{
+    #FAQ-section {
+        font-size: 3vw;
+        margin-top: 10%;
+    }
+
+
+    /* #region Transport */
+
+    #air-travel-text {
+        font-size: larger;
+    }
+
+    #air-travel h2 {
+        font-size: 3vw;
+    }
+
+    #transport-grid h3{
+        font-size: 2.3vw;
+    }
+
+    #transport-grid h4{
+        font-size: 1.8vw;
+    }
+
+    #transport-grid p {
+        font-size: 2vw;
+    }
+
+    #walkable-text {
         font-size: 2.5vw;
-        transform: translate(-35%, -110%);
+    }
+
+    #transport-grid {
+        gap: 1px;
+        grid-template-columns: 45% 45%;
+        margin-left: 5%;
+    }
+
+    #air-travel-img {
+        max-width: 40% !important;
+    }
+
+    /* #endregion Transport */
+
+}
+
+/* #endregion UNDER 1090PX */
+
+/* #region UNDER 750PX */
+
+@media (max-width: 750px) {      
+
+    /* Nav */
+
+    .navigation-bar a {
+        font-size: 3vw;
+    }
+
+    .nav-bar-buttons {
+        width: 90%;
+    }
+
+    /* Home */
+
+    #home-nav-bar-background {
+        height: 8vh;
+    }
+
+    #home-page-content {
+        font-size: 3vw;
+        margin-top: 10%;
+        width: 40vw;
+        padding: 2%;
+    }
+
+    #home-page-img {
+        max-width: 40vw;
+    }
+
+    /* Activities */
+
+    #act-header-text {
+        font-size: 3vw !important;
+    }
+
+    #landing-text {
+        max-width: 100%;
+    }
+
+
+    /* #region Transport */
+
+    #transport-grid {
+        grid-template-columns: 50% 50%;
+    }
+
+    #air-travel-h2 {
+        font-size: 5vw !important;
+        text-align: left;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+    #transport-header h1 {
+        font-size: 7vw;
+    }
+
+    #transport-grid h3{
+            font-size: 3vw;
+    }
+
+    #transport-grid h4{
+        font-size: 2.7vw;
+    }
+
+    #transport-grid p {
+        font-size: 2.7vw;
     }
 
     #walkable-text {
         font-size: 4vw;
-        width: 70vw;
-        text-align: center;
-        transform: translate(-27%, -60%);
+        max-width: 100%;
     }
 
-    #ground-transport p, h3, h4 {
-        margin-left: 30%;
+    #merriton-landing-url {
+        font-size: 4vw;
     }
 
-    #green-transport p, h3, h4 {
-        margin-left: 30%;
+    #walkable-img {
+        max-width: 130%;
     }
 
-    #private-transport p, h3, h4 {
-        margin-left: 40%;
+    /* #endregion Transport */
+
+    /* Other */
+
+    #FAQ-section {
+        font-size: 4vw;
+        margin-top: 10%;
+        max-width: 85%;
     }
 
-    /* Sections */
-
-    #ground-transport {
-        margin-top: 30%;
-        margin-left: -20%;
-    }
-
-    #private-transport {
-        margin-top: 15%;
-        margin-left: 40%;
-    }
-
-    #rental-transport {
-        margin-bottom: 70%;
-    }
-
-    #green-transport {
-        margin-left: 20%;
-    }
-
-    #transport-grid {
-        font-size: 2.5vw;
-        text-align: center;
-    }
-
-    #transport-nav {
-        height: 10vh;
-    }
-
-    /* Images */
-
-    #air-travel-img {
-        transform: translate(145%, 0%);
-    }
-
-    #walkable-section img {
-        max-width: 70vw;
-        margin-left: 16%;
-    }
-
-
-
-
-    /* FAQ */
-
-    #FAQ-header {
-        height: 20vh;
-    }
-
-    #FAQ-header h1 {
-        font-size: 10vw;
+    #lodging-h1 {
+        font-size: 6vw;
     }
 
     #FAQ-section p {
         font-size: 3vw;
     }
+}
 
-    #FAQ-section {
-        font-size: 4vw;
-        margin-top: 20%;
-        transform: translate(0%, 0%);
+/* #endregion UNDER 750PX */
+
+/* #region UNDER 500PX */
+
+@media (max-width: 500px) {    
+
+    /* #region Nav */
+
+    .nav-bar-buttons {
+        width: 80%;
     }
 
-}    
-    
-
-
-
-
-
-
-
-
-/* MOBILE ADJUSTMENTS */
-
-@media (max-width: 767px) {
-
-    a {
-        font-size: 4.5vw;
+    .nav-bar-buttons a {
+        font-size: 5vw;
     }
 
+    /* #endregion Nav */
 
-    /* HOME PAGE*/
+    /* #region Home */
 
-    /* Header */
-
-    #header-container {
-        max-height: 60vh;
+    #home-navigation-bar a {
+        font-size: 2.8vw;
     }
 
-    #header-slogan {
-        top: 35%;
+    #home-island-name {
+        font-size: 3.5vw;
+        left: 7%;
     }
 
-    #home-logo-img {
-        top: 59%;
-        width: 28vw;
-    }
+    #home-body-content {
+        flex-direction: column;
+        align-items: center;
+    }   
 
-    #header-island-name {
-        top: 60%;
-        left: 5%;
-        font-size: 4vw;
-    }
-
-    #home-nav-buttons {
-        width: 60vw;
-    }
-
-    #home-navigation-bar {
-        top: 67%;
-        width: 100%;
-        left: 0%;
-    }
-
-    #home-nav-bar-background {
-        height: 13vh;
-    }
-
-    /* Body */
-
-    #color-fade1 {
-        top: 69%;
-        height: 7vh;
-        width: 100%;
-    }
-
-    #color-fade2 {
-        top: 71%;
-        width: 100%;
-        height: 10vh;
+    #home-page-content {
+        font-size: 5vw;
+        margin-top: 0%;
+        width: 80%;
+        padding: 0%;
+        margin-bottom: 10%;
     }
 
     #home-page-img {
-        max-width: 98vw;
-        height: auto;
+        max-width: 70%;
+        margin-top: 30%;
     }
 
-    #body-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 40%;
-        padding: 1%;
-        font-size: 1.7vw;
-        align-items: center;
-    }
+    /* #endregion Home */
 
-    #home-page-content {
-        width: 70%;
-        line-height: 3vh;
-        font-family: 'Gamja Flower';
-        font-size: 4vw;
-        text-align: center;
-        margin-top: 8%;
-    }
-
-
-    /* OTHER PAGES NAV */
-
-    .nav-bar-background {
-        height: 10vh;
-    }
-
-    .navigation-bar {
-        width: 100%;
-        left: 0%;
-    }
-
-    .nav-bar-buttons {
-        width: 15vw;
-    }
-
-
-
-    /* DINING PAGE */
+    /* #region Dining */
 
     #dining-body-container {
         flex-direction: column;
     }
 
-    /* Text/Headers */
-
-    #dining-h1 {
-        font-size: 8vw;
-        left: 7%;
-        top: 5%;
-    }
-
-    .dining-h2 {
-        font-size: 5vw;
-        display: flex;
-        flex-direction: column;
-    }
-
-    /* Dine Out */
-
     #dine-out-container {
-        margin-top: 50%;
-        margin-bottom: 7%;
-        width: 90vw;
-        height: 80vh;
+        max-width: 85%;
+        margin: auto;
     }
-
-    
-    #dining-nav-bar {
-        transform: translate(0%, 110%);
-    }
-
-    /* Text/Headers */
-
-    #dine-out-h2 {
-        transform: translate(30%, 100%);
-    }
-
-    #dine-out-text {
-        margin-left: 2%;
-        margin-top: 5%;
-    }
-
-    #dine-out-text p {
-        font-size: 5vw;
-        width: 70vw;
-        text-align: center;
-        transform: translate(0%, -10%);
-    }
-
-    #dine-out-text h3 {
-        font-size: 5vw;
-        transform: translate(5%, -740%);
-    }
-
-    #dining-out-main-content h4 {
-        font-size: 5.4vw;
-    }
-
-    /* Images */
-
-    #dining-fun-img {
-        transform: translate(90%, -120%);
-    }
-
-
-
-    /* Dine In */
 
     #dine-in-container {
-        margin-left: 0%;
-        width: 90vw;
-        height: 80vh;
+        max-width: 85%;
+        margin: auto;
     }
 
-    #dining-in-main-content {
-        transform: translate(-20%, 190%);
-        width: 100vw;
-        height: 50vh;
+    #dine-out-container h3 {
+        font-size: larger;
     }
 
-    .dining-in-sections {
-        padding: 1%;
+    #dine-in-container h3 {
+        font-size: larger;
     }
 
-    /* Text/Headers */
-
-    #dine-in-h2 {
-        transform: translate(21%, 1050%);
+    #dining-body-container h2 {
+        font-size: 8vw;
     }
 
- #dine-in-text h3 {
-        font-size: 5vw;
-        transform: translate(-275%, 1270%);
+    #dining-h1 {
+        font-size: 7vw;
     }
 
-    #dine-in-text p {
-        font-size: 5.5vw;
-        width: 80vw;
-        text-align: center;
-        transform: translate(-60%, 800%);
-    }
+    /* #endregion Dining */
 
-    #dining-in-main-content h4 {
-        font-size: 5.5vw;
-    }
-
-    /* Images */
-
-    #dining-recipe-img {
-        transform: translate(-80%, 260%);
-    }
-
-
-
-    /* LODGING */
-
-    #lodging-body {
-        height: 100vh;
-    }
-
-    #hostels {
-        padding: 5%;
-    }
-
-    #hotels {
-        padding: 5%;
-    }
-
-    #bed-breakfasts {
-        padding: 5%;
-    }
-
-    #lodging-nav-bar {
-        bottom: -15%;
-    }
-
-
-    /* ACTIVITIES */
-
-    #activities-header {
-        font-size: 5vw;
-        transform: translate(0%, 20%);
-    }
-
-    #act-p {
-        font-size: 4.5vw;
-        width: 50vw;
-        transform: translate(0%, -30%);
-    }
-
-    #turtle-beach-text {
-        font-size: 5vw;
-        text-align: center;
-        transform: translate(32%, 0%);
-        margin-top: 10%;
-    }
-
-    #rainforest-text {
-        font-size: 5vw;
-        text-align: center;
-        transform: translate(2%, -290%);
-        margin-top: 8%;
-    }
-
-    #volcano-text {
-        font-size: 5vw;
-        text-align: center;
-        transform: translate(7%, 30%);
+    /* #region Activities */
+    #act-header-text {
+        font-size: 4vw !important;
     }
 
     #landing-text {
-        font-size: 5vw;
-        transform: translate(5%, 0%);
-    }
-
-    #text-list {
-        font-size: 4.5vw;
-    }
-
-
-
-
-    #turtle-beach-section {
-        flex-direction: column;
-    }
-
-    #rainforest-section {
-        flex-direction: column;
-    }
-
-    #white-background {
-        height: 110vh;
-    }
-
-    #activities-list {
-        transform: translate(2%, 20%);
-    }
-
-    #act-nav-bar {
-        bottom: -155%;
-    }
-
-    #activities-bottom-images {
-        gap: 10%;
-    }
-
-
-
-    #turtle-beach-img {
-        margin: auto;
+        font-size: larger;
     }
     
-    #rainforest-img {
-        transform: translate(0%, 25%);
-        margin: auto;
+    #activities-header {
+        font-size: 5vw;
     }
 
-    #volcano-img {
-        transform: translate(-45%, 30%);
+    #activities-right {
+        margin-right: 0;
     }
 
-    #activities-bottom img.merriton-landing-img {
-        max-height: 30vh;
-        max-width: 40vw;
-        transform: translate(120%, 0%);
+    #activities-bottom-grid {
+        max-width: 80%;
+        margin-left: 25%;
+    }
+
+    #activities-bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #activities-bottom-grid img {
-        max-width: 40vw;
-        max-height: 20vh;
-        margin-left: 5%;
+        max-width: 35%;
     }
 
-    #helicopter-img {
-        transform: translate(0%, 20%);
+    /* #endregion Activities */
+
+    /* #region Transport */
+
+    #air-travel-content {
+        flex-direction: column;
+        width: 100%;
     }
-
-
-    /* TRANSPORTATION */
 
     #air-travel-h2 {
-        font-size: 5vw;
+        font-size: 5vw !important;
     }
 
-    #air-travel-text {
-        font-size: 3vw;
-        transform: translate(-60%, -195%);
+    #transport-grid h3{
+        font-size: 4vw;
+    }
+
+    #transport-grid h4{
+        font-size: 3.7vw;
+    }
+
+    #transport-grid p {
+        font-size: 3.8vw;
     }
 
     #walkable-text {
-        font-size: 6vw;
-        transform: translate(-30%, -370%);
-    }
-
-    #transport-grid {
-        font-size: 4vw;
-        width: 100%;
-        transform: translate(-8%, 0%);
-    }
-
-    #private-transport {
-        transform: translate(-10%, 0%);
-    }
-
-    #ground-transport {
-        transform: translate(10%, 0%);
-    }
-
-    #green-transport {
-        transform: translate(10%, 0%);
-    }
-
-    #transport-nav {
-        transform: translate(0%, -500%);
-    }
-
-    #air-travel img {
-        max-width: 50vw;
-        transform: translate(90%, 0%);
-    }
-
-
-    /* FAQ */
-
-    #FAQ-header {
-        height: 15vh;
-    }
-
-    #FAQ-header h1 {
-        font-size: 15vw;
-    }
-
-    #FAQ-section p {
         font-size: 5vw;
     }
 
+    #rental-url {
+        font-size: smaller;
+    }
+
+    #air-travel-text {
+        max-width: 90vw;
+    }
+
+    #air-travel img {
+        max-width: 60% !important;
+    }
+
+    /* #endregion Transport */
+
+    /* #region Other */
+
     #FAQ-section {
-        font-size: 6vw;
-        margin-top: 20%;
-        transform: translate(0%, 0%);
+        font-size: 5vw;
     }
 
-    #FAQ-nav {
-        transform: translate(0%, -100%);
+    #lodging-sections h2 {
+            font-size: larger;
     }
 
-    #FAQ-body {
-        height: 10vh;
+    #FAQ-section p {
+        font-size: 4vw;
     }
+
+    /* #endregion Other */
 
 }
+
+/* #endregion UNDER 500PX */
+
 
 
